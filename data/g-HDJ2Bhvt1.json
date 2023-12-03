@@ -1,0 +1,202 @@
+{
+  "gizmo": {
+    "id": "g-HDJ2Bhvt1",
+    "organization_id": "org-tn4tgkI4QSAEcYobOLcCXKP7",
+    "short_url": "g-HDJ2Bhvt1-the-ux-kingdom-of-answers",
+    "author": {
+      "user_id": "user-DpVXDKx4660geCVoRalYw0sl",
+      "display_name": null,
+      "link_to": null,
+      "selected_display": "name",
+      "is_verified": false
+    },
+    "voice": {
+      "id": "ember"
+    },
+    "workspace_id": null,
+    "model": null,
+    "instructions": null,
+    "settings": null,
+    "display": {
+      "name": "The UX Kingdom of Answers",
+      "description": "UX design mentor versed in ADA guidelines for inclusivity",
+      "welcome_message": "Welcome to a deep dive into user-centric product research! How can I assist in your UX journey today?",
+      "prompt_starters": [
+        "What is UX?",
+        "Does UX have laws?",
+        "What is a wireframe?",
+        "Can you make an image of a simple desktop website?",
+        "Do you have examples of the most common screen sizes?",
+        "What is UX research? "
+      ],
+      "profile_picture_url": "https://files.oaiusercontent.com/file-cDSGZnvZEBOMnOpxeF9RPjJA?se=2123-10-22T14%3A41%3A51Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D4e36917e-9b09-42d0-bb37-47707d031f4f.png&sig=urn0amy%2B79gJ7GkiKgb4dCUlOKAjPaEGi/Ku3iaK/94%3D",
+      "categories": []
+    },
+    "share_recipient": "link",
+    "updated_at": "2023-11-22T16:27:48.837598+00:00",
+    "last_interacted_at": null,
+    "tags": [
+      "public",
+      "reportable"
+    ],
+    "version": null,
+    "live_version": null,
+    "training_disabled": null,
+    "allowed_sharing_recipients": null,
+    "review_info": null,
+    "appeal_info": null,
+    "vanity_metrics": null
+  },
+  "tools": [
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_xmpRMg1t5rZ8e3d3AdFoEXzB",
+      "type": "dalle",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_TZlkBYN5PFQyXzIuqaSDRlLp",
+      "type": "python",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_HsUTC9CQQ3Ch8Dopu6cGSkb7",
+      "type": "browser",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_sczdV01oHodwmWkKrbhG12qR",
+      "type": "browser",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_cwUTdvzHDX0xgd5oRJWtx6Y2",
+      "type": "dalle",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_fj11IcXmntZSnEMQoFrSHi4k",
+      "type": "python",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_aQQaqoyZi0k3nOfzLuHFClL5",
+      "type": "browser",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_qhNRs4VTo3TrCOpz1I3QIKW8",
+      "type": "dalle",
+      "settings": null,
+      "metadata": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_tool_ObP7Jz2baSwk5gBJ0AVsr0CT",
+      "type": "python",
+      "settings": null,
+      "metadata": null
+    }
+  ],
+  "files": [
+    {
+      "id": "gzm_cnf_lHaoRIViI5S7d5ymdDEjwLc7~gzm_file_Xvl67htb2jqo1Q9PxouVI56B",
+      "file_id": "file-w42QXanj7aq9gGi2kjobDYZt",
+      "name": "basic_Web_Layout_Wireframe_DESKTOP.pdf",
+      "type": "application/pdf",
+      "size": 211041,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": 439
+    },
+    {
+      "id": "gzm_cnf_lHaoRIViI5S7d5ymdDEjwLc7~gzm_file_mb1ApJUwYTrYaQmxVVYZP5oC",
+      "file_id": "file-EXfnzpIvod9HoKxz3CiftEPe",
+      "name": "Basic_Design_System_example.pdf",
+      "type": "application/pdf",
+      "size": 62494700,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": 4357
+    },
+    {
+      "id": "gzm_cnf_6U02TuwP9yCJU4L3XFvkDBp9~gzm_file_Q1hbVodaeQlmjmXwbOeOya3S",
+      "file_id": "file-MPVE55mwGVWUjwGeA2lnMHIG",
+      "name": "image.png",
+      "type": "image/png",
+      "size": 65769,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_iXEdvCGAGXI11WDcwK2ZFe6Y",
+      "file_id": "file-rk1VeM7mYUYSEVvzRFInx9OV",
+      "name": "Component_Image_Title_Copy_CTA.jpg",
+      "type": "image/jpeg",
+      "size": 121198,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_B0VCZi0LZvi2aCaZvsxfitDp",
+      "file_id": "file-rk1VeM7mYUYSEVvzRFInx9OV",
+      "name": "Component_Image_Title_Copy_CTA.jpg",
+      "type": "image/jpeg",
+      "size": 121198,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": null
+    },
+    {
+      "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_0gO6woy878ffCXBs2KmD5tPO",
+      "file_id": "file-gVO6fxwOWebAS8DPL3h8xk8g",
+      "name": "type_hierarchy_example.jpg",
+      "type": "image/jpeg",
+      "size": 141158,
+      "location": "fs",
+      "metadata": null,
+      "file_size_tokens": null
+    }
+  ],
+  "product_features": {
+    "attachments": {
+      "type": "retrieval",
+      "accepted_mime_types": [
+        "text/x-sh",
+        "text/x-php",
+        "application/json",
+        "text/x-typescript",
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "application/msword",
+        "text/markdown",
+        "text/x-ruby",
+        "text/html",
+        "text/x-java",
+        "text/x-csharp",
+        "application/x-latext",
+        "text/x-c++",
+        "application/pdf",
+        "text/plain",
+        "text/x-c",
+        "text/x-tex",
+        "text/javascript",
+        "text/x-script.python",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "image_mime_types": [
+        "image/webp",
+        "image/jpeg",
+        "image/gif",
+        "image/png"
+      ],
+      "can_accept_all_mime_types": true
+    }
+  }
+}
