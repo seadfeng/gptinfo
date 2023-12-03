@@ -5,7 +5,7 @@ require_relative "gptinfo/version"
 module Gptinfo
   class Error < StandardError; end
 
-  GIZMO_FIELD = %w( 
+  GIZMO_FIELDS = %w( 
     id
     organization_id
     short_url
@@ -18,7 +18,7 @@ module Gptinfo
     tags
   ).freeze
 
-  GIZMO_DISPLAY_FIELD = %w( 
+  GIZMO_DISPLAY_FIELDS = %w( 
     name
     description
     welcome_message

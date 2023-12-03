@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'json'
 
 RSpec.describe Gptinfo do
   it "has a version number" do
@@ -8,6 +9,8 @@ RSpec.describe Gptinfo do
   it "Parser" do
     text = File.read('data/g-HDJ2Bhvt1.json')
     gpt = Gptinfo.parse(text)
+
+    # base info
     unit_test = { 
       id: 'g-HDJ2Bhvt1',
       name: 'The UX Kingdom of Answers',
@@ -22,5 +25,21 @@ RSpec.describe Gptinfo do
     unit_test.each do |k,v|
       expect(gpt.send(k)).to eq v
     end
+    expect(gpt.file_types.sort).to eq ["application/pdf", "image/jpeg", "image/png"]
+    expect(gpt.tool_types.sort).to eq ["browser", "dalle", "python"]
+    expect(gpt.files_total_size > 0).to eq true
+    expect(gpt.files_total_size_tokens > 0).to eq true
+  end
+
+  it "Tool" do
+    text = File.read('data/tools.json')
+    types = JSON.parse(text).map{|item| Gptinfo::Tool.new(item).type }
+    expect(types.uniq.sort).to eq ["browser", "dalle", "python"]
+  end
+
+  it "File" do
+    text = File.read('data/files.json')
+    types = JSON.parse(text).map{|item| Gptinfo::File.new(item).type }
+    expect(types.uniq.sort).to eq ["application/pdf", "image/jpeg", "image/png"]
   end
 end

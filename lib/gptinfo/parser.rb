@@ -6,7 +6,7 @@ module Gptinfo
     attr_reader :hash, :tools, :files, :product_features, :gizmo
 
     def_delegators :hash, :dig
-    def_delegators :gizmo, *Gptinfo::GIZMO_FIELD, *Gptinfo::GIZMO_DISPLAY_FIELD
+    def_delegators :gizmo, *Gptinfo::GIZMO_FIELDS, *Gptinfo::GIZMO_DISPLAY_FIELDS
 
     def initialize(text)
       @hash = JSON.parse(text)
@@ -30,6 +30,22 @@ module Gptinfo
 
     def get(keys)
       @hash.dig(*Array(keys))
+    end
+
+    def tool_types
+      tools.map{|f| f.type }.uniq
+    end
+
+    def file_types
+      files.map{|f| f.type }.uniq
+    end
+
+    def files_total_size
+      files.map{|f| f.size }.sum
+    end
+
+    def files_total_size_tokens
+      files.map{|f| f.file_size_tokens }.compact.sum
     end
   end
 end

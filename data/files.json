@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gzm_cnf_lHaoRIViI5S7d5ymdDEjwLc7~gzm_file_Xvl67htb2jqo1Q9PxouVI56B",
+    "file_id": "file-w42QXanj7aq9gGi2kjobDYZt",
+    "name": "basic_Web_Layout_Wireframe_DESKTOP.pdf",
+    "type": "application/pdf",
+    "size": 211041,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": 439
+  },
+  {
+    "id": "gzm_cnf_lHaoRIViI5S7d5ymdDEjwLc7~gzm_file_mb1ApJUwYTrYaQmxVVYZP5oC",
+    "file_id": "file-EXfnzpIvod9HoKxz3CiftEPe",
+    "name": "Basic_Design_System_example.pdf",
+    "type": "application/pdf",
+    "size": 62494700,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": 4357
+  },
+  {
+    "id": "gzm_cnf_6U02TuwP9yCJU4L3XFvkDBp9~gzm_file_Q1hbVodaeQlmjmXwbOeOya3S",
+    "file_id": "file-MPVE55mwGVWUjwGeA2lnMHIG",
+    "name": "image.png",
+    "type": "image/png",
+    "size": 65769,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": null
+  },
+  {
+    "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_iXEdvCGAGXI11WDcwK2ZFe6Y",
+    "file_id": "file-rk1VeM7mYUYSEVvzRFInx9OV",
+    "name": "Component_Image_Title_Copy_CTA.jpg",
+    "type": "image/jpeg",
+    "size": 121198,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": null
+  },
+  {
+    "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_B0VCZi0LZvi2aCaZvsxfitDp",
+    "file_id": "file-rk1VeM7mYUYSEVvzRFInx9OV",
+    "name": "Component_Image_Title_Copy_CTA.jpg",
+    "type": "image/jpeg",
+    "size": 121198,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": null
+  },
+  {
+    "id": "gzm_cnf_HFvv8Bi3JqzSt43r6hgq73Wj~gzm_file_0gO6woy878ffCXBs2KmD5tPO",
+    "file_id": "file-gVO6fxwOWebAS8DPL3h8xk8g",
+    "name": "type_hierarchy_example.jpg",
+    "type": "image/jpeg",
+    "size": 141158,
+    "location": "fs",
+    "metadata": null,
+    "file_size_tokens": null
+  }
+]
