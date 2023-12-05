@@ -33,19 +33,23 @@ module Gptinfo
     end
 
     def tool_types
-      tools.map{|f| f.type }.uniq
+      @tool_types ||= tools.map{|t| { t.type => t.capabiliy } }.uniq
+    end
+
+    def capabilities
+      @capabilities ||= tool_types.map{|type| type.values[0] }
     end
 
     def file_types
-      files.map{|f| f.type }.uniq
+      @file_types ||= files.map{|f| f.type }.uniq
     end
 
     def files_total_size
-      files.map{|f| f.size }.sum
+      @files_total_size ||= files.map{|f| f.size }.sum
     end
 
     def files_total_size_tokens
-      files.map{|f| f.file_size_tokens }.compact.sum
+      @files_total_size_tokens ||= files.map{|f| f.file_size_tokens }.compact.sum
     end
   end
 end

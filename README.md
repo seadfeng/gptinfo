@@ -11,12 +11,18 @@ gem install gptinfo
 ```
 ## Usage
 
+[DEMO JSON](data/g-HDJ2Bhvt1.json)
+
 ```ruby
-info = "{...}"
-gpt = Gptinfo.parse(info)
+text = File.read('data/g-HDJ2Bhvt1.json')
+gpt = Gptinfo.parse(text)
 puts gpt.id
 puts gpt.name
 puts gpt.description
+puts gpt.capabilities
+puts gpt.file_types
+puts gpt.files_total_size
+puts gpt.files_total_size_tokens
 ```
 
 ## Development

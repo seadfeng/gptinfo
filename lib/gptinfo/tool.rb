@@ -4,7 +4,7 @@ module Gptinfo
   class Tool
     FIELDS = %w( id type settings metadata ).freeze
     extend Forwardable
-    attr_reader :hash, *FIELDS
+    attr_reader :hash, :capabiliy, *FIELDS
 
     FIELDS.each do |field|
        define_method(field) do
@@ -16,6 +16,17 @@ module Gptinfo
 
     def initialize(hash)
       @hash = hash
+    end
+
+    def capabiliy
+      case type
+      when 'python'
+        'Code Interpreter'
+      when 'dalle'
+        'DALL·E Image Generation'
+      when 'browser'
+        'Web Browsing'
+      end
     end
 
     private

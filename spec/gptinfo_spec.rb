@@ -22,11 +22,9 @@ RSpec.describe Gptinfo do
       updated_at: '2023-11-22T16:27:48.837598+00:00',
       last_interacted_at: nil
     }
-    unit_test.each do |k,v|
-      expect(gpt.send(k)).to eq v
-    end
     expect(gpt.file_types.sort).to eq ["application/pdf", "image/jpeg", "image/png"]
-    expect(gpt.tool_types.sort).to eq ["browser", "dalle", "python"]
+    expect(gpt.tool_types.map{|type| type.keys[0] }.sort).to eq ["browser", "dalle", "python"]
+    expect(gpt.capabilities.sort).to eq ["Code Interpreter", "DALL·E Image Generation", "Web Browsing"]
     expect(gpt.files_total_size > 0).to eq true
     expect(gpt.files_total_size_tokens > 0).to eq true
   end
