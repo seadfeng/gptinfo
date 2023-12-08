@@ -41,11 +41,11 @@ module Gptinfo
     end
 
     def capabilities
-      @capabilities ||= tool_types.map{|type| type.values[0] }
+      @capabilities ||= tool_types.map{|type| type.values[0] }.compact
     end
 
     def has_plugin?
-      @capabilities.include?("Plugin")
+      plugins_prototypes.size > 0
     end
 
     def file_types
