@@ -26,8 +26,6 @@ module Gptinfo
         'DALL·E Image Generation'
       when 'browser'
         'Web Browsing'
-      when 'plugins_prototype'
-        'Plugin'
       end
     end
 
