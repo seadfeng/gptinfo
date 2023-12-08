@@ -26,7 +26,21 @@ module Gptinfo
         'DALL·E Image Generation'
       when 'browser'
         'Web Browsing'
+      when 'plugins_prototype'
+        'Plugin'
       end
+    end
+
+    def plugin?
+      type == 'plugins_prototype'
+    end
+
+    def domain
+      metadata['domain'] unless metadata.empty?
+    end
+
+    def raw_spec
+      JSON.parse(metadata['raw_spec']) unless metadata.empty?
     end
 
     private

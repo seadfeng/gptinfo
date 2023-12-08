@@ -31,8 +31,13 @@ RSpec.describe Gptinfo do
 
   it "Tool" do
     text = File.read('data/tools.json')
-    types = JSON.parse(text).map{|item| Gptinfo::Tool.new(item).type }
-    expect(types.uniq.sort).to eq ["browser", "dalle", "python"]
+    types = JSON.parse(text).map{|item| Gptinfo::Tool.new(item) }
+    expect(types.map(&:type).uniq.sort).to eq ["browser", "dalle", "plugins_prototype", "python"]
+
+    # plugins_prototype
+    plugins = types.filter {|item| item.type == "plugins_prototype" }
+    expect(plugins.first.plugin?).to eq true
+    expect(plugins.first.domain).to eq 'www.eventbriteapi.com'
   end
 
   it "File" do

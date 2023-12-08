@@ -20,6 +20,10 @@ module Gptinfo
       @tools ||= get('tools').map{|item| Tool.new(item) }
     end
 
+    def plugins_prototypes
+      @tools.filter { |tool| tool.type == 'plugins_prototype' }
+    end
+
     def files
       @files ||= get('files').map{|item| File.new(item) }
     end
@@ -38,6 +42,10 @@ module Gptinfo
 
     def capabilities
       @capabilities ||= tool_types.map{|type| type.values[0] }
+    end
+
+    def has_plugin?
+      @capabilities.include?("Plugin")
     end
 
     def file_types
