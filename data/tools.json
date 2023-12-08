@@ -52,5 +52,43 @@
     "type": "python",
     "settings": null,
     "metadata": null
+  },
+  {
+    "id": "gzm_cnf_pxse1QlxHg1ZXxTI6Y6NhGWW~gzm_tool_yizxX5aZ6l9WKGWQ7Xo5KcAY",
+    "type": "plugins_prototype",
+    "settings": null,
+    "metadata": {
+      "action_id": "g-630f55526644a3e4d3fb64f56f9b004beac24526",
+      "domain": "www.eventbriteapi.com",
+      "raw_spec": "{\n  \"openapi\": \"3.1.0\",\n  \"info\": {\n    \"title\": \"Eventbrite-like Event Creation API\",\n    \"description\": \"API for creating 'Meet the Future' events with specific details.\",\n    \"version\": \"v1.0.0\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://www.eventbriteapi.com\"\n    }\n  ],\n  \"paths\": {\n    \"/v3/organizations/514868749047/events/\": {\n      \"post\": {\n        \"summary\": \"Create a 'Meet the Future' event\",\n        \"description\": \"Creates a new 'Meet the Future' event with specific details and information.\",\n        \"operationId\": \"createEvent\",\n        \"requestBody\": {\n          \"required\": true,\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"$ref\": \"#/components/schemas/EventRequest\"\n              }\n            }\n          }\n        },\n        \"responses\": {\n          \"201\": {\n            \"description\": \"Event created successfully\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/EventResponse\"\n                }\n              }\n            }\n          },\n          \"400\": {\n            \"description\": \"Invalid request, missing or incorrect event details\"\n          },\n          \"500\": {\n            \"description\": \"Server error occurred while creating the event\"\n          }\n        }\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {\n      \"EventRequest\": {\n        \"type\": \"object\",\n        \"properties\": {\n\n          \"event\": {\n            \"type\": \"object\",\n            \"properties\": {\n          \"name\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"html\": {\n                \"type\": \"string\",\n                \"example\": \"Your Event Name Here in HTML format\"\n              }\n            },\n            \"required\": [\"html\"]\n          },\n          \"summary\": {\n\n                \"type\": \"string\",\n                \"example\": \"Event Description in HTML format\"\n            \n          },\n\n          \"start\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"timezone\": {\n                \"type\": \"string\",\n                \"example\": \"Europe/Rome\"\n              },\n              \"utc\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\",\n                \"example\": \"2023-12-01T18:00:00Z\"\n              }\n            },\n            \"required\": [\"timezone\", \"utc\"]\n          },\n          \"end\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"timezone\": {\n                \"type\": \"string\",\n                \"example\": \"Europe/Rome\"\n              },\n              \"utc\": {\n                \"type\": \"string\",\n                \"format\": \"date-time\",\n                \"example\": \"2023-12-01T21:00:00Z\"\n              }\n            },\n            \"required\": [\"timezone\", \"utc\"]\n          },\n          \"currency\": {\n            \"type\": \"string\",\n            \"default\": \"EUR\"\n          }\n}}\n        },\n        \"required\": [\"name\", \"start_time\", \"end_time\", \"summary\"]\n      },\n      \"EventResponse\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"event_id\": {\n            \"type\": \"string\",\n            \"example\": \"1234567890\"\n          },\n          \"status\": {\n            \"type\": \"string\",\n            \"example\": \"created\"\n          },\n          \"creation_time\": {\n            \"type\": \"string\",\n            \"format\": \"date-time\",\n            \"example\": \"2023-05-05T19:30:00Z\"\n          }\n        }\n      }\n    }\n  }\n}\n",
+      "json_schema": null,
+      "auth": {
+        "type": "service_http",
+        "instructions": "",
+        "authorization_type": "bearer",
+        "verification_tokens": {},
+        "custom_auth_header": ""
+      },
+      "privacy_policy_url": "https://www.eventbrite.com/help/en-us/articles/460838/eventbrite-privacy-policy/"
+    }
+  },
+  {
+    "id": "gzm_cnf_pxse1QlxHg1ZXxTI6Y6NhGWW~gzm_tool_VxYXY18Cb4XB4wXBN70feYJP",
+    "type": "plugins_prototype",
+    "settings": null,
+    "metadata": {
+      "action_id": "g-e574776c80636be947f8f881094dc928f000ac6f",
+      "domain": "leadthefuturetech.wpcomstaging.com",
+      "raw_spec": "{\n  \"openapi\": \"3.1.0\",\n  \"info\": {\n    \"title\": \"WooCommerce Coupon API\",\n    \"description\": \"API for creating WooCommerce coupons with specific requirements.\",\n    \"version\": \"v1.0.0\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://leadthefuturetech.wpcomstaging.com\"\n    }\n  ],\n  \"paths\": {\n    \"/wp-json/myapi/v1/create-coupon/\": {\n      \"post\": {\n        \"summary\": \"Create a WooCommerce coupon\",\n        \"description\": \"Creates a new coupon with specific attributes and restrictions.\",\n        \"operationId\": \"createCoupon\",\n        \"requestBody\": {\n          \"required\": true,\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"$ref\": \"#/components/schemas/CouponRequest\"\n              }\n            }\n          }\n        },\n        \"responses\": {\n          \"200\": {\n            \"description\": \"Successful response\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/CouponResponse\"\n                }\n              }\n            }\n          },\n          \"400\": {\n            \"description\": \"Invalid request\"\n          },\n          \"500\": {\n            \"description\": \"Server error\"\n          }\n        }\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {\n      \"CouponRequest\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"amount\": {\n            \"type\": \"number\",\n            \"format\": \"float\",\n            \"example\": 30\n          },\n          \"email\": {\n            \"type\": \"string\",\n            \"format\": \"email\",\n            \"example\": \"specificemail@example.com\"\n          }\n        },\n        \"required\": [\n          \"email\"\n        ]\n      },\n      \"CouponResponse\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"coupon_code\": {\n            \"type\": \"string\"\n          }\n        }\n      }\n    }\n  }\n}",
+      "json_schema": null,
+      "auth": {
+        "type": "service_http",
+        "instructions": "",
+        "authorization_type": "bearer",
+        "verification_tokens": {},
+        "custom_auth_header": ""
+      },
+      "privacy_policy_url": "https://leadthefuturetech.wpcomstaging.com/"
+    }
   }
 ]
