@@ -21,7 +21,7 @@ module Gptinfo
     end
 
     def plugins_prototypes
-      @tools.filter { |tool| tool.type == 'plugins_prototype' } unless @tools.empty?
+      tools.filter { |tool| tool.type == 'plugins_prototype' }
     end
 
     def files
