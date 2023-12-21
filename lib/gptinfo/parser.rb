@@ -53,11 +53,11 @@ module Gptinfo
     end
 
     def files_total_size
-      @files_total_size ||= files.map{|f| f.size.to_i }.sum
+      @files_total_size ||= files.map{|f| f.size }.compact.sum
     end
 
     def files_total_size_tokens
-      @files_total_size_tokens ||= files.map{|f| f.file_size_tokens.to_i }.compact.sum
+      @files_total_size_tokens ||= files.map{|f| f.file_size_tokens }.compact.sum
     end
   end
 end
