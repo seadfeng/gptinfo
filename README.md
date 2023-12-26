@@ -23,8 +23,7 @@ puts gpt.name
 puts gpt.description
 puts gpt.capabilities
 puts gpt.file_types
-puts gpt.files_total_size
-puts gpt.files_total_size_tokens
+# [{"application/pdf"=>2}, {"image/png"=>1}, {"image/jpeg"=>3}]
 ```
 
 ## Development

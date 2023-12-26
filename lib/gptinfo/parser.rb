@@ -49,15 +49,7 @@ module Gptinfo
     end
 
     def file_types
-      @file_types ||= files.map{|f| f.type }.uniq
-    end
-
-    def files_total_size
-      @files_total_size ||= files.map{|f| f.size }.compact.sum
-    end
-
-    def files_total_size_tokens
-      @files_total_size_tokens ||= files.map{|f| f.file_size_tokens }.compact.sum
+      @file_types ||= files.map{|f| f.type }.group_by { |e| e }.transform_values(&:count).map { |key, count| { key => count } }
     end
   end
 end
