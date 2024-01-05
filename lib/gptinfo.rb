@@ -16,6 +16,7 @@ module Gptinfo
     updated_at 
     last_interacted_at
     tags
+    vanity_metrics
   ).freeze
 
   GIZMO_DISPLAY_FIELDS = %w( 
